@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+        Newer GD team
+    </title>
+
+    <style>
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: brown;
+            margin: auto;
+        }
+        
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: auto;
+        }
+        
+        body {
+            margin: 0;
+            background: repeating-linear-gradient( 75deg, #f2f2f2, #f2f2f2 25px, azure 25px, azure 50px);
+        }
+        
+        .navigation {
+            width: 100%;
+            height: 80px;
+            background-color: aquamarine;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .box {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 12px;
+        }
+        
+        .logo {
+            height: 80%;
+            width: auto;
+            display: block;
+        }
+        
+        .box:hover {
+            background-color: aqua;
+        }
+        
+        .text {
+            display: flex;
+            align-items: center;
+        }
+        
+        .socials {
+            display: flex;
+            align-items: center;
+        }
+        
+        .image {
+            background-color: aquamarine;
+            border: 3px solid black;
+            padding-right: 10px;
+            max-width: 40px;
+        }
+        
+        .image:hover {
+            background-color: aqua;
+        }
+        
+        .trailers {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .screenshots {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .sh {
+            height: 225px;
+            padding-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="box">
+            <img src="./assets/newer.png" height="115%">
+        </div>
+        <div class="box">
+            <p><b>about</b></p>
+        </div>
+        <div class="box" onclick="window.location.href = 'https://discord.gg/9YKJ6qPXvf'">
+            <p><b>Discord server</b></p>
+
+        </div>
+    </div>
+    <p><br><br><br><br></p>
+    <div class="text">
+        <h1>Who are we?</h1>
+    </div>
+    <div class="text">
+        <h2>We are a team of people dedicated to remaking Newer Super Mario Bros Wii inside of Geometry Dash.</h2>
+    </div>
+    <p><br><br></p>
+    <div class="text">
+        <h1>Trailers:</h1>
+    </div>
+    <div class="trailers">
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/9NuRuCerz2s" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture allowfullscreen">
+        </iframe>
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/CS2cEXFxxh0" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture allowfullscreen">
+        </iframe>
+    </div>
+    <p><br><br></p>
+    <div class="text">
+        <h1>Screenshots:</h1>
+    </div>
+
+    <div class="screenshots">
+        <img src="assets/sh1.png" class="sh">
+        <img src="assets/sh2.png" class="sh">
+        <img src="assets/sh3.png" class="sh">
+    </div>
+
+    <div class="socials">
+        <div class="image" onclick="window.location.href='https://www.youtube.com/@NewerGD'">
+            <img src="assets/yt.png" height="50px">
+        </div>
+        <div class="image" onclick="window.location.href='https://www.tiktok.com/@newer.gd'">
+            <img src="assets/tt.png" height="50px">
+        </div>
+        <div class="image" onclick="window.location.href='https://discord.gg/9YKJ6qPXvf'">
+            <img src="assets/dc.png" height="50px">
+        </div>
+    </div>
+
+
+</body>
+
+</html>
