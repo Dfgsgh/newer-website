@@ -107,6 +107,11 @@
             <p><b>Our partners</b></p>
 
         </div>
+
+        <div class="box" onclick="window.location.href = 'suggestions.html'">
+            <p><b>Give us your feedback</b></p>
+
+        </div>
     </div>
 
     <p><br><br><br><br></p>
@@ -117,7 +122,7 @@
         <h2>Post</h2>
     </div>
 
-    <div class="image" id="cancelbtn">
+    <div class="image" onclick="exitpage()">
         <h2>Cancel</h2>
     </div>
 
@@ -145,15 +150,21 @@
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify({
-                    text
+                    "text": text
                 })
             });
+        }
+
+        function exitpage() {
+            window.location.href = 'suggestions.html'
         }
 
         function send() {
             const text = document.getElementById("post").value;
             console.log(text);
             submit()
+
+            setTimeout(exitpage, 1000)
         }
     </script>
 
